@@ -1,0 +1,40 @@
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders don't overlap */
+  }
+
+  table, th, td {
+    border: 1px solid black; /* Adds a black border to the table and cells */
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2; /* Light gray background for table headers */
+  }
+
+  /* Add styling for no data message */
+  td[colspan="100%"] {
+    text-align: center;
+  }
+
+  #loading {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  iframe {
+    display: none;
+  }

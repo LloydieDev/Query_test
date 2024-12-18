@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Data Display</title>
+  </head>
+  <body>
+    <h1>Data from MySQL Database</h1>
+
+    <!-- Button to download the CSV -->
+    <button id="downloadCsvBtn">Download CSV</button>
+
+    <!-- Loading indication -->
+    <div id="loading">Downloading CSV...</div>
+
+    <!-- Hidden iframe for triggering downloads -->
+    <iframe id="downloadFrame"></iframe>
+
+    <!-- Table to display the data -->
+    <table id="dataTable">
+      <thead>
+        <tr></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>
