@@ -48,7 +48,7 @@ downloadCsvBtn.addEventListener('click', () => {
   loadingIndicator.style.display = 'block';
 
   // Use the iframe to trigger the download
-  downloadFrame.src = 'http://localhost:3000/api/data-to-csv';
+  downloadFrame.src = 'api/data-to-csv';
 
   // Listen for iframe load event to hide the loading indicator
   downloadFrame.onload = () => {
